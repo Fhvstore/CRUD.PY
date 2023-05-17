@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="file"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 98%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CADASTRO DE PRODUTO</h1>
+        <form action="" method="get" enctype="multipart/form-data">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+            <label for="caracteristicas">Características:</label>
+            <textarea id="caracteristicas" name="caracteristicas" rows="5" required></textarea>
+
+            <label for="indicacao_uso">Indicação de Uso:</label>
+            <textarea id="indicacao_uso" name="indicacao_uso" rows="5" required></textarea>
+
+            <label for="dados_tecnicos">Dados Técnicos:</label>
+            <textarea id="dados_tecnicos" name="dados_tecnicos" rows="5" required></textarea>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" required>
+
+            <label for="ficha_tecnica">Ficha Técnica:</label>
+            <input type="file" id="ficha_tecnica" name="ficha_tecnica" required>
+
+            <label for="manual_instrucoes">Manual de Instruções:</label>
+            <input type="file" id="manual_instrucoes" name="manual_instrucoes" required>
+
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" step="0.01" required>
+
+            <label for="tipo_loja">Tipo de loja que vende:</label>
+            <select id="tipo_loja" name="tipo_loja" required>
+                <option value="loja_normal">Loja Normal</option>
+                <option value="loja_pro">Nauber Pro</option>
+            </select>
+
+            <input type="submit" value="Cadastrar Produto">
+        </form>
+    </div>
+</body>
+
+</html>
